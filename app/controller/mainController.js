@@ -1,7 +1,17 @@
+const {sheet} = require("../models")
+
 const mainController = {
 
-    homepage(req,res){
-        res.send('hello controller main');
+    async homepage(req,res){
+
+        try {
+            const sheets = await sheet.findAll()
+            res.render('home', {sheets});
+        } catch (error) {
+            
+        }
+
+        
     }
 
 }

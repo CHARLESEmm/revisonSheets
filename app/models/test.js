@@ -1,12 +1,17 @@
+const Tag = require("./Tag");
 const User = require("./User");
 
+
 const test = async () => {
-    try {
-        const chuckNorris = await User.findByPK(1);
-        console.log(JSON.stringify(chuckNorris, null, 2));
-    } catch (error) {
-        console.error("Une erreur est survenue :", error);
-    }
+    
+       
+
+        // Récupération de tous les utilisateurs
+        const tag = await Tag.findByPk(1);
+        
+        console.log(tag.toJSON());
+    
+   
 }
 
 test();
