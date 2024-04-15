@@ -1,5 +1,6 @@
 const Tag = require("./Tag");
 const User = require("./User");
+const Sheet = require("./Sheet");
 
 
 const test = async () => {
@@ -7,9 +8,10 @@ const test = async () => {
        
 
         // Récupération de tous les utilisateurs
-        const tag = await Tag.findByPk(1);
+        const sheet = await Sheet.findAll();
         
-        console.log(tag.toJSON());
+        console.log(JSON.stringify(sheet, null, 2))
+
     
    
 }

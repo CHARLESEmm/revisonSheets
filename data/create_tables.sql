@@ -18,7 +18,7 @@ CREATE TABLE "sheet" (
     "description" TEXT NOT NULL,
     "content" TEXT NOT NULL,
     "season" INTEGER NOT NULL,
-    "viewAmount" INTEGER NULL,
+    "view_amount" INTEGER NULL,
     "author_id" INTEGER NOT NULL REFERENCES "user"("id"),
     "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ

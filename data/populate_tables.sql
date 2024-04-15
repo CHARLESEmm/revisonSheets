@@ -6,7 +6,7 @@ VALUES ('John', 'Doe', 'john.doe@example.com', 'password123'),
        ('Bob', 'Johnson', 'bob.johnson@example.com', 'password456');
 
 -- Insert into "sheet" table
-INSERT INTO "sheet" ("title", "description", "content", "season", "viewAmount", "author_id") VALUES
+INSERT INTO "sheet" ("title", "description", "content", "season", "view_amount", "author_id") VALUES
 ('Methode MERISE', 'Tout savoir sur le MCD/MLD/MPD', 'blablabla', 5, 0, 2),
 ('les classes', 'Tout savoir sur les clases en js', 'blablabla les classes c est super cool', 5, 0, 1),
 ('les user stories', 'Tout savoir sur les US', 'blablabla les US c est pas un pays mais une methodologie', 5, 0, 2);
